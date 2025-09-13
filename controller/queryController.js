@@ -8,6 +8,7 @@ exports.createQuery = async (req, res) => {
         await newQuery.save();
         res.status(201).json({ message: 'Query created successfully', query: newQuery });
     } catch (error) {
+        console.log(error, "Errro")
         res.status(500).json({ message: 'Server error', error });
     }
 };
