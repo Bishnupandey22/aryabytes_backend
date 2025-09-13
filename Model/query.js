@@ -18,7 +18,6 @@ const querySchema = new Schema({
     email: {
         type: String,
         required: true,
-        unique: true
     },
     message: {
         type: String,
